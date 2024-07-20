@@ -223,7 +223,7 @@ int precisaEspaco(FILE *input, FILE *output, char *palavra) {
       ungetc(proximo, input);
       return 0;
     } else {
-      //Why does this work
+      //Why
       ungetc(proximo, input);
       ungetc(c, input);
       return 0;
@@ -454,7 +454,7 @@ int main(int argc, char *argv[]) {
   if(argc < 3) {
     printf("O programa deve ser chamado com os nomes dos arquivos de entrada e saida.\n");
     printf("\nExemplo: \n");
-    printf(" > precc Input.c Output.c\n\n");
+    printf(" > cpp Input.c Output.c\n\n");
     exit(1);
   }
 
